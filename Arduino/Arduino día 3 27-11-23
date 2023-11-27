@@ -2,12 +2,12 @@ En el día de hoy he visualizado el video CAP #003 de este canal:
 
 https://www.youtube.com/watch?v=1HGiDuX1VmA&list=PLEzmH7aN82FEh2JjYuNCvFu6wFolHai32&index=5
 
-En el se explican que son los pines, (entradas digitales y analógicas, se conectan cables, resistencias, sensores...). En función del proyecto, hay que coger un Arduino
-de un tamaño u otro. Los más pequeños consumen menos, pero tiene menos pines y puedes grabar menos código. Hay Arduinos que tienen wifi y algunos hasta se le pueden 
-incorporar una cámara.
+En el se explican que son los pines, (entradas digitales y analógicas, se conectan cables, resistencias, sensores...). En función del proyecto, hay que coger un
+Arduino de un tamaño u otro. Los más pequeños consumen menos, pero tiene menos pines y puedes grabar menos código. Hay Arduinos que tienen wifi y algunos hasta se 
+le pueden incorporar una cámara.
 
 Los pines digitales van desde los 0 V, (= 0 = off), hasta los 5 V, (= 1 = on). En la gráfica 1 de "Arduino día 3 27-11-23 Imagénes" se representa.
-El símbolo ~ permite dar valores entre 0 y 5 V, y se llaman pwm, solo en los pines que tengan este símbolo, (~), se les puede dar valores de voltaje de entre 0 y 5 V.
+El símbolo ~ permite dar valores entre 0 y 5 V, y se llaman pwm, solo en los pines que tengan este símbolo, (~), se les puede dar valores de voltaje de entre 0 y 5V.
 
 Un ejemplo es el sensor de distancias, (imagen 1 del archivo "Arduino día 3 27-11-23 Imagénes". Este sensor de distancias necesita valores intermedios entre 0 y 5 V, 
 con lo cual deberíamos introducir este tipo de sensores en los canales analógicos. El tiempo que tarda en rebotar la señal indica la distancia y señal que recibe el
@@ -15,20 +15,23 @@ Arduino.
 
 Las entradas analógicas van desde 0, (= 0 V), a 1023, (= 5 V). Con lo cual el sensor de distancia puede dar lugar a valores intermedios, (4´9, 4'8,...1'1,1,...).
 
-Cuando tu le des 5 V de valor, el programa analógico va a recibir 1023. Tenemos x pines digitales, (en el caso que se está estudiando en el video son 13). Para iniciar
-un programa hemos de definir el pin de entrada y el de salida. Imaginemos que definimos el pin 4 como la salida, (sacamos la información), y el 9 como la entrada, (la
-recibimos). Ahora en nuestro programa ponemos por el pin 9 ponemos un interruptor que puede estar encendido o apagado, (5 y 0 V respectivamente).
+Cuando tu le des 5 V de valor, el programa analógico va a recibir 1023. Tenemos x pines digitales, (en el caso que se está estudiando en el video son 13). Para
+iniciar un programa hemos de definir el pin de entrada y el de salida. Imaginemos que definimos el pin 4 como la salida, (sacamos la información), y el 9 como la 
+entrada, (la recibimos). Ahora en nuestro programa ponemos por el pin 9 ponemos un interruptor que puede estar encendido o apagado, (5 y 0 V respectivamente).
 
 Cuando reciba 5 V por el la entrada, (pin 9), que saque 5 V por la salida, (pin 4).
 
 El GND, (punto del Arduino que nos permite cerrar los circuitos llevándolos a tierra, (Ground)), lleva el circuito a 0 V.
 
-Los pines TX - 1 y RX - 0, (estos pueden o no estar el modelo de Arduino MRK 1500), son los transmisores y receptores de señales, (enviadas por el pin 1 y recibidas por
-el pin 0, respectivamente), también respectivamente. Esto te permite conectar varios Arduinos en serie.
+Los pines TX - 1 y RX - 0, (estos pueden o no estar el modelo de Arduino MRK 1500), son los transmisores y receptores de señales, (enviadas por el pin 1 y recibidas
+por el pin 0, respectivamente), también respectivamente. Esto te permite conectar varios Arduinos en serie.
 
 Otros pines interesantes es el reset, que reinicia el Arduino, pero NO SE BORRA EL CONTENIDO, se guarda en el "disco duro" del Arduino.
-Si a este reset le conectamos 0 V, (o el GND que es lo mismo), se reiniciara el Arduino y volvera a empezar, (reinicio por Hardware). Las salidas de 3,3 V y de 5 V son 
-para alimentar a otros sensores. Y el pin Vin sirve para alimentar al Arduino.
+Si a este reset le conectamos 0 V, (o el GND que es lo mismo), se reiniciara el Arduino y volvera a empezar, (reinicio por Hardware). Las salidas de 3,3 V y de 5 V 
+son para alimentar a otros sensores. Y el pin Vin sirve para alimentar al Arduino.
 
-En cuánto a LEDs tenemos el de ON que indica que el Arduino esta funcionando y los LEDs de TX y RX, (el Arduino está transmitiendo y recibiendo información en caso de que
-estén encendidos). Por último las entradas de cables que son las del USB, (para conectarlo a ordenador o móviles), por la cual entran 5 V, y la entrada para el transformador.
+En cuánto a LEDs tenemos el de ON que indica que el Arduino esta funcionando y los LEDs de TX y RX, (el Arduino está transmitiendo y recibiendo información en caso
+de que estén encendidos). Por último las entradas de cables que son las del USB, (para conectarlo a ordenador o móviles), por la cual entran 5 V, y la entrada para
+el transformador.
+
+He terminado el CAP #003, y tengo que empezar el CAP #004.
