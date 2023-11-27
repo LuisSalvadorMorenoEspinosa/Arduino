@@ -1,4 +1,4 @@
-En el día de hoy he visualizado los videos de este canal:
+En el día de hoy he visualizado el video CAP #003 de este canal:
 
 https://www.youtube.com/watch?v=1HGiDuX1VmA&list=PLEzmH7aN82FEh2JjYuNCvFu6wFolHai32&index=5
 
@@ -20,3 +20,8 @@ un programa hemos de definir el pin de entrada y el de salida. Imaginemos que de
 recibimos). Ahora en nuestro programa ponemos por el pin 9 ponemos un interruptor que puede estar encendido o apagado, (5 y 0 V respectivamente).
 
 Cuando reciba 5 V por el la entrada, (pin 9), que saque 5 V por la salida, (pin 4).
+
+El GND, (punto del Arduino que nos permite cerrar los circuitos llevándolos a tierra, (Ground)), lleva el circuito a 0 V.
+
+Los pines TX - 1 y RX - 0, (estos pueden o no estar el modelo de Arduino MRK 1500), son los transmisores y receptores de señales, (enviadas por el pin 1 y recibidas por
+el pin 0, respectivamente), también respectivamente.  
