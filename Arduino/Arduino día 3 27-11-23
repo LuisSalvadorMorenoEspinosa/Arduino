@@ -24,4 +24,6 @@ Cuando reciba 5 V por el la entrada, (pin 9), que saque 5 V por la salida, (pin 
 El GND, (punto del Arduino que nos permite cerrar los circuitos llevándolos a tierra, (Ground)), lleva el circuito a 0 V.
 
 Los pines TX - 1 y RX - 0, (estos pueden o no estar el modelo de Arduino MRK 1500), son los transmisores y receptores de señales, (enviadas por el pin 1 y recibidas por
-el pin 0, respectivamente), también respectivamente.  
+el pin 0, respectivamente), también respectivamente. Esto te permite conectar varios Arduinos en serie.
+
+Otros pines interesantes es el reset, que reinicia el Arduino, pero NO SE BORRA EL CONTENIDO.
