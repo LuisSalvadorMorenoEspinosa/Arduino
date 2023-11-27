@@ -6,11 +6,17 @@ En el se explican que son los pines, (entradas digitales y analógicas, se conec
 de un tamaño u otro. Los más pequeños consumen menos, pero tiene menos pines y puedes grabar menos código. Hay Arduinos que tienen wifi y algunos hasta se le pueden 
 incorporar una cámara.
 
-Los pines digitales van desde los 0 V, (= 0 = off), hasta los 5 V, (= 1 = on). El símbolo ~ permite dar valores entre 0 y 5 V, y se llaman pwm, solo en los pines que
-tengan este símbolo, (~), se les puede dar valores de voltaje de entre 0 y 5 V.
+Los pines digitales van desde los 0 V, (= 0 = off), hasta los 5 V, (= 1 = on). En la gráfica 1 de "Arduino día 3 27-11-23 Imagénes" se representa.
+El símbolo ~ permite dar valores entre 0 y 5 V, y se llaman pwm, solo en los pines que tengan este símbolo, (~), se les puede dar valores de voltaje de entre 0 y 5 V.
 
 Un ejemplo es el sensor de distancias, (imagen 1 del archivo "Arduino día 3 27-11-23 Imagénes". Este sensor de distancias necesita valores intermedios entre 0 y 5 V, 
 con lo cual deberíamos introducir este tipo de sensores en los canales analógicos. El tiempo que tarda en rebotar la señal indica la distancia y señal que recibe el
 Arduino.
 
-Las entradas analógicas van desde 0, (= 0V), a 1023, (= 5V).
+Las entradas analógicas van desde 0, (= 0 V), a 1023, (= 5 V). Con lo cual el sensor de distancia puede dar lugar a valores intermedios, (4´9, 4'8,...1'1,1,...).
+
+Cuando tu le des 5 V de valor, el programa analógico va a recibir 1023. Tenemos x pines digitales, (en el caso que se está estudiando en el video son 13). Para iniciar
+un programa hemos de definir el pin de entrada y el de salida. Imaginemos que definimos el pin 4 como la salida, (sacamos la información), y el 9 como la entrada, (la
+recibimos). Ahora en nuestro programa ponemos por el pin 9 ponemos un interruptor que puede estar encendido o apagado, (5 y 0 V respectivamente).
+
+Cuando reciba 5 V por el la entrada, (pin 9), que saque 5 V por la salida, (pin 4).
