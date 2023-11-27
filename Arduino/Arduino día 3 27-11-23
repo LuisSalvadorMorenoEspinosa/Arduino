@@ -26,4 +26,9 @@ El GND, (punto del Arduino que nos permite cerrar los circuitos llevándolos a t
 Los pines TX - 1 y RX - 0, (estos pueden o no estar el modelo de Arduino MRK 1500), son los transmisores y receptores de señales, (enviadas por el pin 1 y recibidas por
 el pin 0, respectivamente), también respectivamente. Esto te permite conectar varios Arduinos en serie.
 
-Otros pines interesantes es el reset, que reinicia el Arduino, pero NO SE BORRA EL CONTENIDO.
+Otros pines interesantes es el reset, que reinicia el Arduino, pero NO SE BORRA EL CONTENIDO, se guarda en el "disco duro" del Arduino.
+Si a este reset le conectamos 0 V, (o el GND que es lo mismo), se reiniciara el Arduino y volvera a empezar, (reinicio por Hardware). Las salidas de 3,3 V y de 5 V son 
+para alimentar a otros sensores. Y el pin Vin sirve para alimentar al Arduino.
+
+En cuánto a LEDs tenemos el de ON que indica que el Arduino esta funcionando y los LEDs de TX y RX, (el Arduino está transmitiendo y recibiendo información en caso de que
+estén encendidos). Por último las entradas de cables que son las del USB, (para conectarlo a ordenador o móviles), por la cual entran 5 V, y la entrada para el transformador.
