@@ -2,10 +2,12 @@ En el curso de Edgar Pons vemos el Cap #004
 
 Instalamos el software, el IDE y los drivers, y debemos de conectarlo, (excptuando los drivers el resto está explicado).
 
-Un dato a añadir es que hay muchos tipos de cables, no todos sirven para hacer funcionar el Arduino, (según el autor hay que abrirlos y ver que hay 4 cables, 2 de 
-potencia y 2 de datos). Si los cables no tienen dentro los de datos, lo único para lo que sirve ese cable es para cargar el dispositivo.
+Un dato a añadir es que hay muchos tipos de cables, no todos sirven para hacer funcionar el Arduino, (según el autor hay que abrirlos y ver
+que hay 4 cables, 2 de potencia y 2 de datos). Si los cables no tienen dentro los de datos, lo único para lo que sirve ese cable es para
+cargar el dispositivo.
 
 Para diferenciarlo sin romperlo, tendremos que conectar el Arduino y ver si se iluminan los LEDs correspondientes. 
 
-Cargamos un archivo de ejemplo, (el blink, que se ve en el CAP #005), que nos va a encender y apagar un LED determinado y nos asegurará que ese cable sirve para datos.
+Cargamos un archivo de ejemplo, (el blink, que se ve en el CAP #005), que nos va a encender y apagar un LED determinado y nos asegurará
+que ese cable sirve para datos.
 
